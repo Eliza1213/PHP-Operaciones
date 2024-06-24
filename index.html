@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Aritméticas</title>
+</head>
+<body>
+    <h1>Operaciones Aritméticas</h1>
+    <form action="./calcular.php" method="post">
+        <label for="num1">Ingresa el Primer número:</label>
+        <br>
+        <input type="number" id="num1" name="num1" required
+        placeholder="recibe solo número">
+        <br><br>
+        <label for="num2">Ingresa el segundo número:</label>
+        <br>
+        <input type="number" id="num2" name="num2" required
+        placeholder="recibe solo número">
+        <br><br>
+        <label for="operar">Operación:</label>
+        <br><br>
+        <select id="operar" name="operar" required>
+            <option value="suma">SUMAR</option>
+            <option value="resta">RESTAR</option>
+            <option value="multiplicacion">MULTIPLICAR</option>
+            <option value="division">DIVIDIR</option>
+        </select>
+        <br><br>
+        <input type="submit" value="calcular">
+    </form>
+</body>
+</html>
